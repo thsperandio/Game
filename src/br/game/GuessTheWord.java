@@ -1,5 +1,4 @@
 package br.game;
-
 public class GuessTheWord {
     private boolean play = false;
     private Words randomWord = new Words();
