@@ -6,5 +6,6 @@ public class Application {
 
         GuessTheWord game = new GuessTheWord();
         game.start();
+        game.end();
     }
 }

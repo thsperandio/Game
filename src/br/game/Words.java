@@ -22,17 +22,30 @@ public class Words {
             StringBuilder text = new StringBuilder();
 
             for (char letter:letters){
-                if (letter == '\u0000'){
+
+                text.append(letter == '\u0000' ? '-': letter); //Replaces the code below
+                text.append(' ');
+               /* if (letter == '\u0000'){
                     text.append('-');
                     //word += '-';
                 }else {
                     text.append(letter);
                     //word += letter;
                 }
-                text.append(' ');
-               // word += ' ';
+
+                 word += ' '; */
             }
             return text.toString();
             //return word;
+    }
+
+    public void guess(char letter) { //loop through selected word and check if any of letter is equal to the one being passed to this Method
+
+            for (int i = 0; i<selectedWord.length(); i++){
+                if (letter == selectedWord.charAt(i)){
+                    letters [i] = letter;
+                }
+            }
+
     }
 }
