@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b490699-b254-48b8-b9f6-726e71c28538" name="Changes" comment="Game Blanck Spaces">
+    <list default="true" id="2b490699-b254-48b8-b9f6-726e71c28538" name="Changes" comment="Game more things">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/game/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/game/GuessTheWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/game/GuessTheWord.java" afterDir="false" />
@@ -88,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656014030528</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Game more things">
+      <created>1656361425795</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656361425795</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,6 +112,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Game SettingUp" />
     <MESSAGE value="Game Blanck Spaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game Blanck Spaces" />
+    <MESSAGE value="Game more things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game more things" />
   </component>
 </project>

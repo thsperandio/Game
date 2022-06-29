@@ -7,9 +7,7 @@ public class Words {
                                         "properties", "ceremony", "independence", "beneath", "information", "students", "employee"};
         private String selectedWord;
         private Random random = new Random();
-
         private char[] letters;
-
         public Words(){
             selectedWord = randomWords[random.nextInt(randomWords.length)]; //randomWords.length limits the scope to scan
 
@@ -32,20 +30,31 @@ public class Words {
                     text.append(letter);
                     //word += letter;
                 }
-
                  word += ' '; */
             }
             return text.toString();
             //return word;
     }
+    public boolean isGuessedRight(){
 
-    public void guess(char letter) { //loop through selected word and check if any of letter is equal to the one being passed to this Method
+            for (char letter: letters){
+                if (letter == '\u0000'){
+                    return false;
+                }
+            }
+            return true;
+    }
+    public boolean guess(char letter) { //loop through selected word and check if any of letter is equal to the one being passed to this Method
+
+            boolean isGuessedRight = false; //returns true ou false depending on the guessed letter
 
             for (int i = 0; i<selectedWord.length(); i++){
                 if (letter == selectedWord.charAt(i)){
                     letters [i] = letter;
+                    isGuessedRight = true;
+
                 }
             }
-
+            return isGuessedRight;
     }
 }
