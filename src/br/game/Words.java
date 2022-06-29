@@ -3,19 +3,17 @@ package br.game;
 import java.util.Random;
 
 public class Words {
-        private String[] randomWords ={"animals", "happiness", "indefinite", "steady", "birthday", "extreme", "rights",
-                                        "properties", "ceremony", "independence", "beneath", "information", "students", "employee"};
-        private String selectedWord;
-        private Random random = new Random();
-        private char[] letters;
+    private final String selectedWord;
+        private final Random random = new Random();
+        private final char[] letters;
         public Words(){
+            String[] randomWords = {"animals", "happiness", "indefinite", "steady", "birthday", "extreme", "rights",
+                    "properties", "ceremony", "independence", "beneath", "information", "students", "employee"};
             selectedWord = randomWords[random.nextInt(randomWords.length)]; //randomWords.length limits the scope to scan
 
-            letters = new char[selectedWord.length()];//length is a Method here that's why it got brackets. String is a n object and has methods
+            letters = new char[selectedWord.length()];//length is a Method here that's why it got brackets. String is an object and has methods
         }
         public String toString() {
-
-            //String word = "";
 
             StringBuilder text = new StringBuilder();
 
@@ -23,17 +21,8 @@ public class Words {
 
                 text.append(letter == '\u0000' ? '-': letter); //Replaces the code below
                 text.append(' ');
-               /* if (letter == '\u0000'){
-                    text.append('-');
-                    //word += '-';
-                }else {
-                    text.append(letter);
-                    //word += letter;
-                }
-                 word += ' '; */
             }
             return text.toString();
-            //return word;
     }
     public boolean isGuessedRight(){
 
